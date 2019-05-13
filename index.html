@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>注册网易免费邮箱 - 中国第一大电子服务商</title>
+	<style type="text/css" media="screen">
+	body{
+		font-family: Verdana;
+	}
+	input{
+        height:22px;
+        border:1px solid #a9a9a9;
+        border-radius: 3px;
+    }
+	</style>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+	<script src="js/swiperTab.js"></script>
+	<!-- <script>  
+	    /*swiper选项卡切换*/
+	    $(function () {
+	      //swiperTab 是你导航的className,active是你当前状态的className
+	        $('.swiperTab > li').eq(0).addClass('active');
+	        tabs('.swiperTab > li','.swiper-container','active');
+	    });
+	</script> -->
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+
+			<div class="logoAndTitle">
+			
+				<div class="logo">
+					<a href="#"><img src="images/163logo-s.gif" alt=""></a>
+					<a href="#"><img src="images/126logo-s.gif" alt=""></a>
+					<a href="#"><img src="images/yeahlogo-s.gif" alt=""></a>
+				</div>
+				<div class="title">
+					中国第一大电子服务商
+				</div>
+			</div>
+			<div class="learn">
+				<a href="#">了解更多 </a>|<a href="#"> 反馈意见</a>
+			</div>
+		</div>
+
+		<div id="main">
+			<div id="main-header">
+				欢迎注册无限容量的网易邮箱，邮件地址可以登录使用其他网易旗下产品。
+			</div>
+			<div id="mainbar">
+				<div class="box">
+				    <ul class="swiperTab">
+				        <li id="a1"> <span>注册字母邮箱</span> </li>
+				        <li> <span>注册手机号码邮箱</span> </li>
+				        <li> <span>注册VIP邮箱</span> </li>
+				    </ul>
+				    <!-- <div class="swiperTab">
+				        <div> <span>注册字母邮箱</span> </div>
+				        <div> <span>注册手机号码邮箱</span> </div>
+				        <div> <span>注册VIP邮箱</span> </div>
+				    </div> -->
+				    <div class="swiper-container">
+	        			<div class="swiper-wrapper">
+							<form class="swiper-slide" align="center" action="reg.php">
+								<!-- <h1>注册字母邮箱</h1> -->
+								<ul>
+									<li class="list">
+										<div class="label"><div class="red">*</div>邮件地址</div>
+										<div class="content">
+											<div>
+												<input type="text" name="name" size="22px" required>	@
+												<select name="mainDomain" style="border-radius: 5px;">
+													<option value="163" selected="selected">163.com</option>
+													<option value="126">126.com</option>
+													<option value="yeah">yeah.net</option>
+												</select>
+											</div>
+											
+											<p class="annotation">6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
+											<p class="redAnnotation" style="display: none;"><img src="images/annotation.png">  用户名和密码不能完全相同</p>
+											<p class="redAnnotation" style="display: none;"><img src="images/annotation.png">  该用户名已被注册</p>
+										</div>
+									</li >
+									<li class="list">
+										<div class="label"><div class="red">*</div>密码</div>
+										<div class="content">
+											<input type="password" name="password" size="37px" required>
+											<p class="annotation">6~18个字符，区分大小写</p>
+											<p class="redAnnotation" style="display: none;"><img src="images/annotation.png">  密码长度应为6~16个字符</p>
+										</div>
+									</li >
+									<li class="list">
+										<div class="label"><div class="red">*</div>确认密码</div>
+										<div class="content">
+											<input type="password" name="mainConfirmPassword" size="37px" required>
+											<p class="annotation">请再次确认密码</p>
+											<p class="redAnnotation" style="display: none;"><img src="images/annotation.png">两次填写的密码不一致</p>
+										</div>
+									</li>
+									<li class="list">
+										<div class="label"><div class="red">*</div>手机号码</div>
+										<div class="content">
+											<input id="country" type="text" name="mobile" size="34px" value="+86- ">
+											<!-- <div class="itFlag">
+												<em>&nbsp;</em>
+											</div> -->
+											<p class="annotation">密码忘记时，可以通过该手机号快速找回密码</p>
+											<p class="redAnnotation" style="display: none;"><img src="images/annotation.png">  请填写正确的手机号</p>
+										</div>
+									</li>
+									<li class="list">
+										<div class="label"><div class="red">*</div>验证码</div>
+										<div class="content" >
+											<div style="display: flex;flex-direction: row;">
+												<div class="left">
+													<input type="text" name="Identifying_code" size="23px">
+													<p class="annotation">请填写图片中的字符，不区分大小写</p>
+													<button  style="width:150px;height:30px;margin-top: 5px;" > 免费获取验证码</button>
+												</div>
+												<div class="right">
+													<a href="#"><img src="images/check.jpeg" alt="" style="width:100px;"></a>
+													<div>
+														<a href="#" style="font-size: 10px;">看不清楚？换张图片</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="list">
+										<div class="label"><div class="red">*</div>短信验证码</div>
+										<div class="content">
+											<input type="text" name="Identifying_massage" size="37px">
+											<p class="annotation">请查收手机短信，并填写短信中的验证码</p>
+										</div>
+									</li>
+									<li class="list">
+										<div class="label"></div>
+										<div class="check">
+											<input type="checkbox" name="check">同意<a href="#" title="">“服务条款”</a>和<a href="#" title="">“隐私相关政策”</a>
+										</div>
+									</li>
+									<li class="list">
+										<div class="label"></div>
+										<div class="submit">
+											<input type="submit" value="立即注册">
+										</div>
+									</li>
+								</ul>
+										
+							</form>
+							<!-- <form class="swiper-slide">2</form>
+							<form class="swiper-slide">3</form> -->
+
+					</div>
+				</div>
+			
+	    		</div>
+
+
+				<div id="image">
+					<img src="images/reg_master.gif" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="footer-left">
+				<a href="#">关于网易</a>
+				<a href="#">关于网易免费邮</a>
+				<a href="#">邮箱官方博客</a>
+				<a href="#">客户服务</a>
+				<a href="#">隐私政策</a>
+			</div>
+			<div class="footer-right">
+				网易公司版权所有 © 1997-2018
+			</div>
+			
+		</div>
+	
+
+
+		
+	</div>
+
+	<!-- <div class="box">
+	    <ul class="swiperTab">
+	        <li> <span>注册字母邮箱</span> </li>
+	        <li> <span>注册手机号码邮箱</span> </li>
+	        <li> <span>注册VIP邮箱</span> </li>
+	    </ul>
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">千寻Div+CSS</div>
+	            <div class="swiper-slide">阿飞JavaScript+JQuery</div>
+	            <div class="swiper-slide">无虑AngularJS+Vue+NodeJs</div>
+	        </div>
+	    </div>
+	</div> -->
+</body>
+</html>
